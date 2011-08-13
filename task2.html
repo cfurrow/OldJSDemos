@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Task 2</title>
+		<link rel="stylesheet" type="text/css" href="styles/960/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/960/text.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/960/960.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/carstyle.css"/>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="scripts/car.js"></script>
+	</head>
+	<body>
+		<div class="container_16">
+			<div>
+				<h1>Drag racing!</h1>
+				<div>
+					Select your car speeds, then click "Race!" to watch 'em drag!
+				</div>
+			</div>
+			<div class="track">
+				<div id="car1" class="slow">
+					<div class="exhaust"></div>
+				</div>
+			</div>
+			<div class="track">
+				<div id="car2" class="slow">
+					<div class="exhaust"></div>
+				</div>
+			</div>	
+			<div>
+				Car 1: 
+				<select name="car1speed" id="car1speed">
+					<option value="1">Slow</option>
+					<option value="3">Medium</option>
+					<option value="5">Fast</option>
+				</select><br/>
+				Car 2:
+				<select name="car2speed" id="car2speed">
+					<option value="1">Slow</option>
+					<option value="3">Medium</option>
+					<option value="5">Fast</option>
+				</select>
+			</div>
+			<div id="go" class="button">
+				Race!
+			</div>
+			<div id="car1go" class="button">
+				Car 1 Go!
+			</div>
+			<div id="car2go" class="button">
+				Car 2 Go!
+			</div>
+		</div>
+	</body>
+</html>

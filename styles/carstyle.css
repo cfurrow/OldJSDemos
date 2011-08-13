@@ -1,0 +1,49 @@
+.track
+{
+	height:50px;
+	width:100%;
+	margin: 10px 0 10px 0;
+	background-color:#333;
+}
+.exhaust
+{
+	width:20px;
+	height:10px;
+	position:relative;
+	left:-20px;
+	top:15px;
+	background-image:url('../images/exhaust.gif');
+}
+.slow, .medium, .fast
+{
+	height:30px;
+	width:70px;
+	position:relative;
+	top:10px;
+	background-repeat:no-repeat;
+}
+.button
+{
+	display:inline;
+	text-align:center;
+	height:20px;
+	border:1px solid #000;
+	padding: 0 5px 0 5px;
+	cursor:pointer;
+}
+#car1accel, #car2accel
+{
+	width:35px;
+}
+.fast
+{
+	background-image: url('../images/fast_car.png');	
+}
+.medium
+{
+	background-image: url('../images/medium_car.png');
+}
+.slow
+{
+	background-image: url('../images/slow_car.png');
+}

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Task 1</title>
+		<link rel="stylesheet" type="text/css" href="styles/960/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/960/text.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/960/960.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/mapstyle.css"/>
+		<script src="http://maps.google.com/maps?file=api&v=2&sensor=false&key=ABQIAAAAUdQx9d6D4W-tmeD4Rimm4hRT_yhHuUr2QZ729PtLcLMwbcIukBRt9-n5RhcHe3nLVzMLXJr2RYHuhg" type="text/javascript"></script>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="scripts/plot.js"></script>
+	</head>
+	<body onload="initializeGmap()" onunload="GUnload()">
+		<div class="container_16">
+			<div>
+				<h1>Maplotastic!</h1>
+				<div>
+					Enter a latitude/longitude coordinate, or and address and click the appropriate "plot" button.
+					That's it!
+				</div>
+			</div>
+			<div class="grid_10">
+				<div id="map"></div>
+				<div>
+					<strong>Current Latitude:</strong> <span id="lat"></span>
+					<strong>Current Longitude:</strong> <span id="lng"></span>
+				</div>
+			</div>
+			<div class="grid_6">
+				<div class="section">
+					<div class="title">Plot by Lat/Lon</div>
+					<div>
+						Latitude: <input id="inputLat" type="text" name="latitude"/><br/>
+						Longitude: <input id="inputLng" type="text" name="longitude"/><br/>
+						<div class="plot-button" id="plot">
+							Plot!
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="title">Plot by address</div>
+					<div>
+						Address: <input id="inputAddress" type="text" name="address"/>
+					</div>
+					<div class="plot-button" id="addrPlot">
+						Plot!
+					</div>
+				</div>
+				<div class="section">
+					<div id="error"></div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>

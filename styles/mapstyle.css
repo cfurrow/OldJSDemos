@@ -1,0 +1,44 @@
+#map
+{
+	width:450px;
+	height:400px;
+}
+.plot-button
+{
+	cursor:pointer;
+	width:50px;
+	height:20px;
+	border:1px solid #000;
+	text-align:center;
+}
+#inputLat, #inputLng
+{
+	width:120px;
+}
+#inputAddress
+{
+	width:280px;
+}
+.section
+{
+	text-align:right;
+}
+.section .title
+{
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+	font-weight:bold;
+}
+
+#error
+{
+	height:20px;
+	color:#f00;
+	font-weight:bold;
+}
+.error
+{
+	background-color:fcc;
+}
+
